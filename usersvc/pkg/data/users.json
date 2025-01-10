@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "shop_id": 1,
+        "name": "admin",
+        "phone": "08910000001",
+        "password": "$2y$10$eOAFcF.HK36.nbCQ1XvA.uFI20jLJtY4TKWpvrg3VetaQZUxFwqwu",
+        "platform": "dashboard"
+    },
+    {
+        "id": 2,
+        "shop_id": null,
+        "name": "john",
+        "phone": "08910000002",
+        "password": "$2y$10$eOAFcF.HK36.nbCQ1XvA.uFI20jLJtY4TKWpvrg3VetaQZUxFwqwu",
+        "platform": "customer"
+    },
+    {
+        "id": 3,
+        "shop_id": null,
+        "name": "doe",
+        "phone": "08910000003",
+        "password": "$2y$10$eOAFcF.HK36.nbCQ1XvA.uFI20jLJtY4TKWpvrg3VetaQZUxFwqwu",
+        "platform": "customer"
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "shop_id": 1,
+        "warehouse_id": 1,
+        "code": "G001",
+        "name": "garam",
+        "price": 1000,
+        "stock_total": 10,
+        "stocked_at": "2025-01-02T15:04:05Z"
+    },
+    {
+        "id": 2,
+        "shop_id": 1,
+        "warehouse_id": 1,
+        "code": "k001",
+        "name": "kecap",
+        "price": 5000,
+        "stock_total": 10,
+        "stocked_at": "2025-01-02T15:04:05Z"
+    },
+    {
+        "id": 3,
+        "shop_id": 1,
+        "warehouse_id": 1,
+        "code": "G002",
+        "name": "gula",
+        "price": 10000,
+        "stock_total": 10,
+        "stocked_at": "2025-01-02T15:04:05Z"
+    },
+    {
+        "id": 4,
+        "shop_id": 1,
+        "warehouse_id": 2,
+        "code": "TV001",
+        "name": "TV",
+        "price": 1000000,
+        "stock_total": 10,
+        "stocked_at": "2025-01-02T15:04:05Z"
+    },
+    {
+        "id": 5,
+        "shop_id": 1,
+        "warehouse_id": 2,
+        "code": "AC001",
+        "name": "AC",
+        "price": 2000000,
+        "stock_total": 10,
+        "stocked_at": "2025-01-02T15:04:05Z"
+    },
+    {
+        "id": 6,
+        "shop_id": 1,
+        "warehouse_id": 2,
+        "code": "L001",
+        "name": "Laptop",
+        "price": 3000000,
+        "stock_total": 10,
+        "stocked_at": "2025-01-02T15:04:05Z"
+    }
+]

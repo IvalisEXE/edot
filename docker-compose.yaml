@@ -1,0 +1,71 @@
+version: "2.2"
+
+services:
+  mydb:
+    image: postgres:13
+    container_name: postgres-db
+    networks:
+      - my-network
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+
+  myredis:
+    image: redis:alpine
+    container_name: redis-db
+    networks:
+      - my-network
+    ports:
+      - "6379:6379"
+
+  apigw:
+    build:
+      context: ./apigw
+    container_name: apigw
+    ports:
+      - "3000:3000" 
+    networks:
+      - my-network
+
+  usersvc:
+    build:
+      context: ./usersvc
+    container_name: usersvc
+    ports:
+      - "3001:3001" 
+    networks:
+      - my-network
+
+  shopsvc:
+    build:
+      context: ./shopsvc
+    container_name: shopsvc
+    ports:
+      - "3003:3003" 
+    networks:
+      - my-network
+  
+  warehousesvc:
+    build:
+      context: ./warehousesvc
+    container_name: warehousesvc
+    ports:
+      - "3004:3004"
+    networks:
+      - my-network
+
+  ordersvc:
+    build:
+      context: ./ordersvc
+    container_name: ordersvc
+    ports:
+      - "3005:3005"
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge  
